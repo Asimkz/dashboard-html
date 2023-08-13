@@ -5,7 +5,7 @@
 @media (max-width: 991.98px) { 
   .navbar-nav{
     flex-direction: inherit;
-    justify-content: space-between;
+    justify-content: space-around;
   }
  }
  @media (max-width: 767.98px) { 
@@ -222,6 +222,7 @@ text-align: center;
   .btn-3:hover{
     background-color: #ffffff;
     color: rgb(33, 32, 32);
+    border: solid #6f91f2;
   }
   .btn-2:hover{
     background-color: #6f91f2;
@@ -289,7 +290,13 @@ text-align: center;
  }
  .rapper-tab-icon-txt{
   position: absolute;
-  right: 0px;
+    right: 32px;
+    display: flex;
+    align-items: baseline;
+   
+ }
+ .rapper-tab-icon-txt h6{
+    color:#6f91f2 ;
  }
  .border-desighn-2{
   border-right: solid #6f91f2;
@@ -380,4 +387,56 @@ font-size: x-small;
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #6f91f2;
   color: white;
+}
+@media (max-width: 600px){
+  .table thead{
+   display: none;
+  }
+  .table, .table tbody, .table tr, .table td{
+    display: block;
+    width: 100%;
+  }
+  .table tr{
+    margin-bottom: 15px;
+  }
+  .table td{
+    padding-left: 20px;
+    text-align: right;
+    position: relative;
+    text-align: right;
+    font-size: smaller;
+  }
+  .table td:hover{
+   background-color:#2e2c4c ;
+   color: white;
+  }
+  .table td::before{
+    content: attr(data-lable);
+    position: absolute;
+    left: 19px;
+    width: 59px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    padding: 0px;
+}
+
+  }
+
+  /* .table{
+    width: 100%;
+ border-collapse: collapse;
+  }
+
+  .table td,.table th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+} */
+@media (max-width: 991.98px) { 
+  .styling{
+  flex-direction: column-reverse;
+  }
 }
